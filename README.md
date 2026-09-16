@@ -16,7 +16,9 @@ The notebook walks through a classic UMAP demonstration on image data:
    technique handles the data.
 4. **Fashion-MNIST** — Same UMAP treatment applied to clothing images, showing how the
    visually similar categories (e.g. shirt vs. coat) are harder to separate.
-5. **Effect of UMAP parameters** — How `min_dist` changes cluster tightness and separation.
+5. **Interactive effect of UMAP parameters** — Two independent sliders that adjust
+   `min_dist` and `n_neighbors` live, showing how each changes cluster tightness and
+   separation.
 6. **3D UMAP embedding** — An interactive Plotly 3D projection of Fashion-MNIST where each
    of the 10 clothing classes (T-shirt/top, Trouser, Pullover, Dress, Coat, Sandal, Shirt,
    Sneaker, Bag, Ankle boot) is labeled by name.
@@ -30,12 +32,14 @@ The notebook walks through a classic UMAP demonstration on image data:
 - `umap-learn`
 - `plotly`
 - `pandas`
+- `ipywidgets`
+- `anywidget`
 - `jupyter` / `notebook`
 
 Install the dependencies with:
 
 ```bash
-pip install numpy matplotlib scikit-learn umap-learn plotly pandas jupyter
+pip install numpy matplotlib scikit-learn umap-learn plotly pandas ipywidgets anywidget jupyter
 ```
 
 ## Usage
